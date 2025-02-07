@@ -39,6 +39,7 @@ async function main() {
     }));
 
     console.log('ID Token:', authResponse.AuthenticationResult.IdToken);
+    console.log("hello Manual Approver");
   } catch (error) {
     console.error('Error:', error);
   }
