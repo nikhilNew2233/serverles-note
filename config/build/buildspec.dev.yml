@@ -19,7 +19,7 @@ phases:
       - echo packaging the service
       - serverless package --package my-artifact --stage dev
       - echo "Deploying the service..."
-      - serverless deploy --stage dev
+      - serverless deploy --stage dev --verbose
     
 artifacts:
   files:
