@@ -1,0 +1,20 @@
+version: 0.2
+    
+phases:
+
+  build:
+    on-failure: ABORT 
+    commands:
+      - echo Deploying resources
+      - serverless deploy --stage dev
+
+    
+artifacts:
+  files:
+    - my-artifact/*
+    - location
+  name: NotesProjectArtifact
+
+cache:
+  paths:
+    - 'node_modules/**/*'
