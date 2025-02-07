@@ -8,7 +8,6 @@ phases:
     commands:
       - echo installing serverless
       - npm i -g serverless@3
-      - cd awsPractice
       - echo installing npm dependecing 
       - npm install
 
@@ -28,4 +27,4 @@ artifacts:
 
 cache:
   paths:
-    - 'awsPractice/node_modules/**/*'
+    - 'node_modules/**/*'
