@@ -18,6 +18,8 @@ phases:
       - npm test
       - echo packaging the service
       - serverless package --package my-artifact --stage dev
+      - echo "Deploying the service..."
+      - serverless deploy --stage dev
     
 artifacts:
   files:
