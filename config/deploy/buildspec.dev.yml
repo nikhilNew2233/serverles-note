@@ -6,9 +6,11 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - echo "Installing project dependencies"
+      - npm ci
       - echo installing serverless
       - npm i -g serverless@3
-      
+
   build:
     on-failure: ABORT 
     commands:
