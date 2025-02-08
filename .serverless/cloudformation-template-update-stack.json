@@ -186,7 +186,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-project/dev/1738938738959-2025-02-07T14:32:18.959Z/serverless-project.zip"
+          "S3Key": "serverless/serverless-project/dev/1738997645174-2025-02-08T06:54:05.174Z/serverless-project.zip"
         },
         "Handler": "handler.createNote",
         "Runtime": "nodejs18.x",
@@ -220,7 +220,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-project/dev/1738938738959-2025-02-07T14:32:18.959Z/serverless-project.zip"
+          "S3Key": "serverless/serverless-project/dev/1738997645174-2025-02-08T06:54:05.174Z/serverless-project.zip"
         },
         "Handler": "handler.getAllNotes",
         "Runtime": "nodejs18.x",
@@ -247,24 +247,24 @@
         "GetAllNotesLogGroup"
       ]
     },
-    "CreateNoteLambdaVersiongKBXl6sHV5cqHIilLHLzqSNLAQ7EWq2Fv7kiZKP5mc": {
+    "CreateNoteLambdaVersionoIttE0HEDtfZz2BPYNJ5hcoYskvStLZzUDhslePNsfE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateNoteLambdaFunction"
         },
-        "CodeSha256": "P3HOLduNRQrjAAsgmG1BWX7aLOVIVA4JRlqTpQ2sZZs="
+        "CodeSha256": "mjVzz2ovOQUw8lQlLlVw3J5gBw/nUNG9J4NlsQUqiek="
       }
     },
-    "GetAllNotesLambdaVersionrkcHjOTkR8jLvm8rIg9rBJODi1StCoQWMfM4llxXXJU": {
+    "GetAllNotesLambdaVersionc13B0uETrxI0ImJLq8gW4NIG9mjk1rnYctAtt8kGoas": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllNotesLambdaFunction"
         },
-        "CodeSha256": "P3HOLduNRQrjAAsgmG1BWX7aLOVIVA4JRlqTpQ2sZZs="
+        "CodeSha256": "mjVzz2ovOQUw8lQlLlVw3J5gBw/nUNG9J4NlsQUqiek="
       }
     },
     "ApiGatewayRestApi": {
@@ -392,7 +392,7 @@
         "GetAllNotesLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1738938670283": {
+    "ApiGatewayDeployment1738997560800": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -597,7 +597,7 @@
     "CreateNoteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateNoteLambdaVersiongKBXl6sHV5cqHIilLHLzqSNLAQ7EWq2Fv7kiZKP5mc"
+        "Ref": "CreateNoteLambdaVersionoIttE0HEDtfZz2BPYNJ5hcoYskvStLZzUDhslePNsfE"
       },
       "Export": {
         "Name": "sls-serverless-project-dev-CreateNoteLambdaFunctionQualifiedArn"
@@ -606,7 +606,7 @@
     "GetAllNotesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllNotesLambdaVersionrkcHjOTkR8jLvm8rIg9rBJODi1StCoQWMfM4llxXXJU"
+        "Ref": "GetAllNotesLambdaVersionc13B0uETrxI0ImJLq8gW4NIG9mjk1rnYctAtt8kGoas"
       },
       "Export": {
         "Name": "sls-serverless-project-dev-GetAllNotesLambdaFunctionQualifiedArn"
