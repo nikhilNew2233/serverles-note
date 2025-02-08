@@ -84,8 +84,8 @@ resources:
     UserPoolDomain:
       Type: AWS::Cognito::UserPoolDomain
       Properties:
-        Domain: myniknotes
-        UserPoolId: { Ref: CognitoUserPool }      
+        Domain: ${self:provider.stage}-myniknotes
+        UserPoolId: { Ref: CognitoUserPool }
 
     NotesTable:
       Type: AWS::DynamoDB::Table
