@@ -186,7 +186,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-project/dev/1738997645174-2025-02-08T06:54:05.174Z/serverless-project.zip"
+          "S3Key": "serverless/serverless-project/dev/1738998070515-2025-02-08T07:01:10.515Z/serverless-project.zip"
         },
         "Handler": "handler.createNote",
         "Runtime": "nodejs18.x",
@@ -196,7 +196,7 @@
         "Environment": {
           "Variables": {
             "STAGE": "dev",
-            "NOTES_TABLE": "NotesTable",
+            "NOTES_TABLE": "dev-NotesTable",
             "COGNITO_USER_POOL_ID": "ap-south-1_8BBC8AcV2",
             "COGNITO_CLIENT_ID": "5dpa71ccvu7jqo013j349pc8ir",
             "TestCheck": "Received"
@@ -220,7 +220,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-project/dev/1738997645174-2025-02-08T06:54:05.174Z/serverless-project.zip"
+          "S3Key": "serverless/serverless-project/dev/1738998070515-2025-02-08T07:01:10.515Z/serverless-project.zip"
         },
         "Handler": "handler.getAllNotes",
         "Runtime": "nodejs18.x",
@@ -230,7 +230,7 @@
         "Environment": {
           "Variables": {
             "STAGE": "dev",
-            "NOTES_TABLE": "NotesTable",
+            "NOTES_TABLE": "dev-NotesTable",
             "COGNITO_USER_POOL_ID": "ap-south-1_8BBC8AcV2",
             "COGNITO_CLIENT_ID": "5dpa71ccvu7jqo013j349pc8ir",
             "TestCheck": "Received"
@@ -247,24 +247,24 @@
         "GetAllNotesLogGroup"
       ]
     },
-    "CreateNoteLambdaVersionoIttE0HEDtfZz2BPYNJ5hcoYskvStLZzUDhslePNsfE": {
+    "CreateNoteLambdaVersiond2hvlXsy02iDHMKFjzfZMgq3KZ1tzfWNCmQtNtopMG0": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateNoteLambdaFunction"
         },
-        "CodeSha256": "mjVzz2ovOQUw8lQlLlVw3J5gBw/nUNG9J4NlsQUqiek="
+        "CodeSha256": "yNGKilA52BIkZ3Hg3dtwGArb66oEzIedV6/BWDWROcc="
       }
     },
-    "GetAllNotesLambdaVersionc13B0uETrxI0ImJLq8gW4NIG9mjk1rnYctAtt8kGoas": {
+    "GetAllNotesLambdaVersionibEIBnhVlWgbcfVU4dr3Ay3RPYTFRw6zDPjOMpGlpU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllNotesLambdaFunction"
         },
-        "CodeSha256": "mjVzz2ovOQUw8lQlLlVw3J5gBw/nUNG9J4NlsQUqiek="
+        "CodeSha256": "yNGKilA52BIkZ3Hg3dtwGArb66oEzIedV6/BWDWROcc="
       }
     },
     "ApiGatewayRestApi": {
@@ -392,7 +392,7 @@
         "GetAllNotesLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1738997560800": {
+    "ApiGatewayDeployment1738997988901": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -597,7 +597,7 @@
     "CreateNoteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateNoteLambdaVersionoIttE0HEDtfZz2BPYNJ5hcoYskvStLZzUDhslePNsfE"
+        "Ref": "CreateNoteLambdaVersiond2hvlXsy02iDHMKFjzfZMgq3KZ1tzfWNCmQtNtopMG0"
       },
       "Export": {
         "Name": "sls-serverless-project-dev-CreateNoteLambdaFunctionQualifiedArn"
@@ -606,7 +606,7 @@
     "GetAllNotesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllNotesLambdaVersionc13B0uETrxI0ImJLq8gW4NIG9mjk1rnYctAtt8kGoas"
+        "Ref": "GetAllNotesLambdaVersionibEIBnhVlWgbcfVU4dr3Ay3RPYTFRw6zDPjOMpGlpU"
       },
       "Export": {
         "Name": "sls-serverless-project-dev-GetAllNotesLambdaFunctionQualifiedArn"

@@ -43,9 +43,6 @@ functions:
             authorizerId:
               Ref: CognitoUserPoolAuthorizer
 
-plugins:
-  - serverless-offline
-  - serverless-dotenv-plugin
 
 custom:
   serverless-offline:
